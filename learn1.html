@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="gbk">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+<script src="jquery-2.1.4.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="bootstrap-dropdown.js"></script>
+<style>
+
+    .a{
+        width: 100%;
+        height: 200px;
+        background: red;
+    }
+    .a ul li{
+        float: left;
+        width: 20%;
+    }
+    .yincang ol li {
+        cursor: pointer;
+        list-style-type: none;
+        text-align: center;
+        background: red;
+        width: 56px;
+        padding: 10px 5px;
+    }
+
+    .yincang ol li:hover {
+        background: white;
+    }
+
+    .navbar-nav > li:hover .yincang {
+        display: block;
+    }
+
+    .table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .class span {
+        text-decoration: line-through;
+    }
+
+
+</style>
+</head>
+<body style="overflow-x:hidden">
+
+<!--表格-->
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <td>class</td>
+                <td>Name</td>
+                <td>Street</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>小张</td>
+                <td>欢迎大家来我家做客</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>小李</td>
+                <td>欢迎来到祖国心脏</td>
+            </tr>
+            <tr>
+                <td>3indesof</td>
+                <td>小王</td>
+                <td>希望下次能来做客</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="container">
+    <!--&lt;!&ndash;text-center outer&#45;&#45;文字居中>-->
+    <div class="row text-center outer">
+        <div class="col-xs-4 col-md-3">典型水库</div>
+        <div class="col-xs-4 col-md-3">历史洪水</div>
+        <div class="col-xs-4 col-md-3">水清</div>
+    </div>
+</div>
+
+
+<!--表单-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">邮箱</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">密码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
+
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Check me out
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <!--<div class="col-xs-12 col-md-3">-->
+        <!--</div>-->
+    </div>
+
+
+    <div class="container">
+        <div class="row text-center outer">
+            <div class="col-xs-3 col-md-3">练习</div>
+            <div class="col-xs-3 col-md-3">练习</div>
+            <div class="col-xs-3 col-md-3">练习</div>
+            <div class="col-xs-3 col-md-3">练习</div>
+        </div>
+    </div>
+
+    <!--弹出-->
+    <div class="container">
+        <div class="row text-center outer">
+            <div class="col-xs-12 col-md-3"></div>
+            <div class="col-xs-12 col-md-6">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"
+                        style="margin: 0">
+                    点击弹出
+                </button>
+            </div>
+            <div class="col-xs-12 col-md-3"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>2345</li>
+                        <li>2345</li>
+                        <li>2345</li>
+                        <li>2345</li>
+                        <li>2345</li>
+                        <li>2345</li>
+                        <li>2345</li>
+                        <li>2345</li>
+                        <li>2345</li>
+                        <li>2345</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--table table-striped条纹状表格 table-bordered边框表格 table table-hover悬停表格 table table-condensed紧缩表格-->
+
+    <table class="table table-condensed">
+        <thead>
+        <tr class="success">
+            <td>年纪</td>
+            <td>班级</td>
+            <td>年纪</td>
+            <td>班级</td>
+            <td>年纪</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="info">
+            <td>345</td>
+            <td>345</td>
+            <td>345</td>
+            <td>345</td>
+            <td>345</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td>345</td>
+            <td>345</td>
+            <td>345</td>
+            <td>345</td>
+            <td>345</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td>345</td>
+            <td>345</td>
+            <td>345</td>
+            <td>345</td>
+            <td>345</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--按钮-->
+    <div class="container">
+        <div class="row text-center outer">
+
+            <div class="col-md-6">
+                <a class="btn btn-default" href="#" role="button">Link</a>
+                <button class="btn btn-default" type="submit">Button</button>
+                <input class="btn btn-default" type="button" value="Input">
+                <input class="btn btn-default" type="submit" value="Submit">
+            </div>
+        </div>
+    </div>
+
+    <!--单选复选框-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-3"></div>
+            <div class="col-xs-12 col-md-6">
+                <label class="checkbox">
+                    <input type="checkbox" value="">
+                    Option one is this and that—be sure to include why it's great
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Option one is this and that—be sure to include why it's great
+                </label>
+                <label class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                </label>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3"></div>
+    </div>
+
+
+    <!--导航条-->
+    <div class="container">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:void (0)">第一个标签</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="javascript:void (0)">工作 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="javascript:void (0)">点击</a></li>
+                    <li><a href="javascript:void (0)">点击</a></li>
+                    <li><a href="javascript:void (0)">点击</a></li>
+                    <li><button type="button" class="btn btn-default navbar-btn">测试</button></li>
+                    <li class="dropdown">
+                        <a href="javascript:void (0)" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">下拉 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void (0)">工作</a></li>
+                            <li><a href="javascript:void (0)">实事求是</a></li>
+                            <li><a href="javascript:void (0)">北京海卓</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void (0)">工作</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void (0)">工作</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void (0)" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">下拉
+                            <ul class="dropdown-menu">
+                                <li><a href="#">工作</a></li>
+                                <li><a href="#">实事求是</a></li>
+                                <li><a href="#">北京海卓</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">工作</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">工作</a></li>
+                            </ul>
+                    </li>
+                </ul>
+                <!--<form class="navbar-form navbar-left" role="search">-->
+                <!--<div class="form-group">-->
+                <!--<input type="text" class="form-control" placeholder="搜索">-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-default">点击</button>-->
+                <!--</form>-->
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="javascript:void (0)">链家</a></li>-->
+                <!--<li class="dropdown">-->
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉 <span class="caret"></span></a>-->
+                <!--<ul class="dropdown-menu">-->
+                <!--<li><a href="javascript:void (0)">上班</a></li>-->
+                <!--<li><a href="javascript:void (0)">上班</a></li>-->
+                <!--<li><a href="javascript:void (0)">上班</a></li>-->
+                <!--<li role="separator" class="divider"></li>-->
+                <!--<li><a href="javascript:void (0)">上班</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <!--</ul>-->
+            </div>
+        </nav>
+    </div>
+
+
+    <!--添加视频--添加音频同添加视频>
+    <!--<div class="git-video" style="width: 500px;">-->
+    <!--<video controls="controls" width="500">-->
+    <!--&lt;!&ndash;controls=controls,向用户显示控件，比如播放按钮&ndash;&gt;-->
+    <!--<source src="video/ICAD_1.mp4" type="video/mp4">-->
+    <!--</video>-->
+    <!--</div>-->
+
+
+    <script type="text/javascript">
+        //        $(function () {
+        //            $("#mybtn").on("mouseover", function () {
+        //                $(".dropdown-toggle").dropdown("toggle")
+        //            });
+        //
+        //        })
+
+    </script>>>.
+
+    
+</body>
+</html>
